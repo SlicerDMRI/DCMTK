@@ -222,16 +222,16 @@ public:
    */
   virtual void clearData();
 
+  /** Check whether measurement values for all tracks are set
+   *  @return OFTrue if values are completely present, OFFalse otherwise
+   */
+  virtual OFBool checkValuesComplete();
+
 protected:
 
   /** Protected constructor, use create() method to create a new track set
    */
   TrcMeasurement();
-
-  /** Check whether measurement values for all tracks are set
-   *  @return OFTrue if values are completely present, OFFalse otherwise
-   */
-  virtual OFBool checkValuesComplete();
 
 private:
 
