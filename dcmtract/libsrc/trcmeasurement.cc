@@ -296,6 +296,7 @@ OFCondition TrcMeasurement::Values::get(const Float32*& dataValues,
     if (result.bad())
     {
       trackPointIndices = NULL;
+      numIndices = numValues;
       result = EC_Normal; // no track point indices mean that measurements cover all points
     }
   }
